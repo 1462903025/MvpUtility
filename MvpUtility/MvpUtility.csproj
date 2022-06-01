@@ -17,15 +17,21 @@
   </ItemGroup>
   
   <ItemGroup>
-    <PackageReference Include="EXILED" Version="5.1.3" />
-    <PackageReference Include="Lib.Harmony" Version="2.0.4" />
+    <PackageReference Include="EXILED" Version="5.2.1" />
+    <PackageReference Include="Lib.Harmony" Version="2.2.1" />
     <PackageReference Include="StyleCop.Analyzers" Version="1.1.118" />
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="Assembly-CSharp-firstpass" HintPath="$(EXILED_References)\Assembly-CSharp-firstpass.dll" Private="false" />
-    <Reference Include="Mirror" HintPath="$(EXILED_References)\Mirror.dll" Private="false" />
-    <Reference Include="UnityEngine.CoreModule" HintPath="$(EXILED_References)\UnityEngine.CoreModule.dll" Private="false" />
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>..\..\dll\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="Mirror">
+      <HintPath>..\..\dll\Mirror.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\dll\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
